@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">JWeather</string>
+    <string name="jweather">欢迎使用JWeather</string>
+    <string name="query">查询</string>
+    <string name="query_db">查询数据库</string>
+    <string name="addCity">添加城市</string>
+    <string name="cancel">取消</string>
+    <string name="lowTem">最低气温</string>
+</resources>

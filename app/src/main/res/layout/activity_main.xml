@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/weatherLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6EE9C"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:padding="2dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/showWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="3dp"
+        android:text="请手动添加城市"
+        android:textColor="@android:color/white"
+        android:textSize="80sp"/>
+
+    <TextView
+        android:id="@+id/showTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="3dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="温度"
+        android:textColor="@android:color/white"
+        android:textSize="80sp"/>
+
+    <RelativeLayout
+        android:id="@+id/temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <RelativeLayout
+            android:id="@+id/highTemAndDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/highTem"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_alignParentLeft="true"
+                android:background="#DCE775"
+                android:gravity="center"
+                android:text="苟"
+                android:textColor="@android:color/white"
+                android:textSize="60sp"/>
+
+            <TextView
+                android:id="@+id/highTemDes"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/highTem"
+                android:gravity="center"
+                android:text="最高气温"
+                android:textColor="@android:color/white"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lowTemAndDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/highTemAndDes">
+
+            <TextView
+                android:id="@+id/lowTem"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_alignParentRight="true"
+                android:background="#FF4081"
+                android:gravity="center"
+                android:text="利"
+                android:textColor="@android:color/white"
+                android:textSize="60sp"/>
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lowTem"
+                android:gravity="center"
+                android:paddingLeft="25dp"
+                android:text="@string/lowTem"
+                android:textColor="@android:color/white"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <RelativeLayout
+            android:id="@+id/nightDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nightWeather"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_alignParentLeft="true"
+                android:background="#7E57C2"
+                android:gravity="center"
+                android:text="国"
+                android:textColor="@android:color/white"
+                android:textSize="60sp"/>
+
+            <TextView
+                android:id="@+id/nightWeatherDes"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nightWeather"
+                android:gravity="center"
+                android:text="夜间天气"
+                android:textColor="@android:color/white"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/windDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/nightDes">
+
+            <TextView
+                android:id="@+id/windInfo"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_alignParentRight="true"
+                android:background="#81C784"
+                android:gravity="center"
+                android:text="家"
+                android:textColor="@android:color/white"
+                android:textSize="60sp"/>
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/windInfo"
+                android:gravity="center"
+                android:paddingLeft="25dp"
+                android:text="风速风向"
+                android:textColor="@android:color/white"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
